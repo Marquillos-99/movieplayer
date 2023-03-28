@@ -1,13 +1,16 @@
+import shc from "../assets/shc.jpg";
 import React from "react";
 import { useState } from "react";
 
 export default function Carousel(props: any) {
-  const images = ["tas.webp", "shc.webp", "s3.wemp"];
+  const images = ["tas.jpg", "shc.jpg", "s3.jpg"];
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
   const selectedNewImage = (index: number, images: string[], next = true) => {
-    const condition = next ? selectedIndex < images.length : selectedIndex > 0;
+    const condition = next
+      ? selectedIndex < images.length - 1
+      : selectedIndex > 0;
     const nextIndex = next
       ? condition
         ? selectedIndex + 1
@@ -39,6 +42,8 @@ export default function Carousel(props: any) {
         src={require(`assets/img/${selectedImage}`).default}
         alt="Gentleman"
       />
+      <button onClick={previous}>{"<"}</button>
+      <button onClick={next}>{">"}</button>
       {/* lazy loading */}
     </>
   );

@@ -9,7 +9,7 @@ function App() {
         <img src={logo} alt="" />
       </div>
       <div>
-        <img src={Carousel} alt="" />
+        <Carousel></Carousel>
       </div>
       <div className=" w-20 mx-auto pt-6 pb-2">
         <img src={home} alt="" />
