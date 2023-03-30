@@ -1,6 +1,6 @@
 import logo from "./assets/logo.png";
 import home from "./assets/home.svg";
-import Carousel from "./components/Carousel.tsx";
+import Carousel from "./components/Carousel";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <div className=" w-20 mx-auto pt-6 pb-2">
         <img src={logo} alt="" />
       </div>
-      <div>
+      <div className=" w-screen h-40 bg-shPrimary-darker">
         <Carousel></Carousel>
       </div>
       <div className=" w-20 mx-auto pt-6 pb-2">
