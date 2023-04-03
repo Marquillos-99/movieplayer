@@ -12,6 +12,11 @@ module.exports = {
         dark: "#cc25ad",
         darker: "#80176c",
       },
+      buttons: {
+        bottom: "#242632",
+        border: "#CCC",
+        top: "#3A3C4A",
+      },
       fondos: {
         gradient_top: "#2D3246",
         gradient_bottow: "#1A1C29",

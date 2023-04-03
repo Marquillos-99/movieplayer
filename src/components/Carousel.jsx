@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import tas from "../assets/tas.jpg";
 import shc from "../assets/shc.jpg";
@@ -40,7 +39,7 @@ export default function Carousel(props) {
     clearInterval(interval1);
   };
 
-  var interval1 = setInterval(next, 2000);
+  var interval1 = setInterval(next, 5000);
 
   return (
     <div className="flex w-full h-full">
