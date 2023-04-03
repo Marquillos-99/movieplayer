@@ -47,7 +47,11 @@ export default function Carousel(props) {
       {/* <button onClick={previous} className="w-1/12">
         {"<"}
       </button> */}
-      <img src={selectedImage} alt="Gentleman" className=" w-full h-full" />
+      <img
+        src={selectedImage}
+        alt="Gentleman"
+        className=" w-full h-full bg-black"
+      />
       {/* <button onClick={next} className="w-1/12">
         {">"}
       </button> */}
