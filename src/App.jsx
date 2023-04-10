@@ -37,16 +37,27 @@ function App() {
           <img src={national} alt="" />
         </button>
       </div>
-      <section className=" box-border block ">
+      <section className=" box-border block max-w-lg w-screen h-24 px-4">
         <div>
           <h4 className=" font-bold text-white">
             Novedades en Disney +
           </h4>
           <div className=" max-w-lg w-screen h-24 px-4">
-            
+            <img src={slides} alt="" />
           </div>
         </div>
       </section>
+      <div className="
+        relative
+        w-14
+        duration-100 
+         border border-shPrimary
+         hover:bg-shPrimary-darker
+         p-1
+      ">
+        <img className=" ease-in shadow-[60px_60px_-60px_rgba(0,30,255,0.5)] rounded-[4px] object-cover w-[100px]" src="https://i.imgur.com/YPQlth8.jpg"/>
+        {/* <img className=" absolute w-[200px] bottom-0 left-0 right-0 m-auto translate-y-1/4 ease-in duration-300 opacity-0" src="https://i.imgur.com/2u3EXCX.png"/> */}
+      </div>
       <div className=" w-20 mx-auto pt-6 pb-2">
         <img src={home} alt="" />
       </div>
