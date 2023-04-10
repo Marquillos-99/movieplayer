@@ -8,19 +8,6 @@ export default function Carousel(props) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
-  const selectedNewImage = (index, images, next = true) => {
-    const condition = next
-      ? selectedIndex < images.length - 1
-      : selectedIndex > 0;
-    const nextIndex = next
-      ? condition
-        ? selectedIndex + 1
-        : 0
-      : condition
-      ? selectedIndex - 1
-      : images.length - 1;
-  };
-
   const previous = () => {
     selectedNewImage(selectedIndex, images, false);
     const condition = selectedIndex > 0;
